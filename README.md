@@ -27,13 +27,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/k0C0T4o' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I ran into an error right after writing the first bit of code. The tap gesture recognizer would throw an error, and I found out that it's because my function signature was written incorrectly. I tried to follow the code in the walkthrough exactly as it was shown, but I realized that the video was probably using an older version of Swift, so the exact code wouldn't work for me. 
 
 ## License
 
