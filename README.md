@@ -1,16 +1,16 @@
-# Pre-work - *Name of App Here*
+# Pre-work - Tipsy
 
-**Name of your app** is a tip calculator application for iOS.
+Tipsy is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: Lily Pham
 
-Time spent: **X** hours spent in total
+Time spent: 2 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.
