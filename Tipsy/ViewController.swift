@@ -15,10 +15,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    let formatter = NumberFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setZeroLabels()
+    }
+    
+    func setZeroLabels() {
+        formatter.numberStyle = .currency
+        formatter.currencyCode = Locale.current.currencyCode
+        formatter.currencySymbol = NSLocale.current.currencySymbol
+        tipLabel.text = formatter.string(from: 0 as NSNumber)
+        totalLabel.text = formatter.string(from: 0 as NSNumber)
     }
 
     @IBAction func onTap(_ sender: AnyObject) {
@@ -31,8 +42,8 @@ class ViewController: UIViewController {
         let tip = bill*tipPercentages[tipControl.selectedSegmentIndex]
         let total = tip + bill
         
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        tipLabel.text = formatter.string(from: tip as NSNumber)
+        totalLabel.text = formatter.string(from: total as NSNumber)
     }
 }
 
